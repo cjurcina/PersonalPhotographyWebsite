@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>DDP Homepage</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="scripts.js"></script> <!--scripts will handle image slider and disable right-click -->
+</head>
+
+<body oncontextmenu="return false, disableRightClick()">
+	<header>
+		<img src="./images/icon.jpg" alt="Icon" id="logo">
+		<h1>Darth Deuces Photography</h1>
+	</header>
+
+	<!-- navigation links to the other webpages on the website -->
+	<nav>
+		<ul>
+			<li><a href="homepage.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="services.html">Products &amp; Services</a></li>
+			<li><a href="contact.html">Contact Me</a></li>
+		</ul>
+	</nav>
+
+	<!-- This section will contain featured photos -->
+	<section id="featuredphotos">
+		<h2>Featured Photographs</h2>
+
+		<img class="featuredPhotos" src="./images/featured1.jpg" alt="Featured Photo" style="display: block; margin: auto;">
+		<img class="featuredPhotos" src="./images/featured2.jpg" alt="Featured Photo">
+		<img class="featuredPhotos" src="./images/featured3.jpg" alt="Featured Photo">
+		<img class="featuredPhotos" src="./images/featured4.jpg" alt="Featured Photo">
+		<img class="featuredPhotos" src="./images/featured5.jpg" alt="Featured Photo">
+		<img class="featuredPhotos" src="./images/featured6.jpg" alt="Featured Photo">
+		<img class="featuredPhotos" src="./images/featured7.jpg" alt="Featured Photo">
+		<img class="featuredPhotos" src="./images/featured8.jpg" alt="Featured Photo">
+		<img class="featuredPhotos" src="./images/featured9.jpg" alt="Featured Photo">
+
+		<!--buttons to control the image slider -->
+
+		<button class="prev" onClick="plusDivs(-1)">&#10094;</button>
+		<button class="next" onClick="plusDivs(+1)">&#10095;</button>
+	</section>
+	<!--Brief summary of what the website is for -->
+	<section id="homebio">
+		<h2>Welcome to Darth Deuces Photography!</h2>
+
+		<p>
+			Welcome to my website, Darth Deuces Photography! I am Darth Deuces, and this website
+			is here to allow me to have a personal space all to myself to share and promote my work.
+			I am a huge geek, and my hope is that you'll find something here that you will enjoy. Photography
+			is a lot of fun, and I love all the franchises in which I base my photography around. That being said,
+			please enjoy my work!
+		</p>
+	</section>
+
+	<footer><p>&copy;Darth Deuces Photography, Website by Chris Jurcina</p></footer>
+</body>
+</html>
